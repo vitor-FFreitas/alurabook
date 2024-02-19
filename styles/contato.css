@@ -1,0 +1,85 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.contato-titulo,
+.contato-texto {
+    background: var(--azul);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contato-titulo {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0.4em;
+}
+
+.contato-texto {
+    font-weight: 300;
+    margin: 1em 0;
+
+}
+
+.email-botao {
+    background-color: transparent;
+    border: 1px solid var(--azul-secudario);
+    color: var(--azul-secudario);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+}
+
+.email-botao::placeholder {
+    font-family: 'Poppins';
+    color: var(--azul-secudario);
+    background: url(../assents/email.svg);
+    background-repeat: no-repeat;
+    padding-left: 2.5em;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: space-around;
+        line-height: 180%;
+    }
+
+    .contato-div {
+        margin: 2em auto;
+    }
+
+    .contato-titulo {
+        font-size: 24px;
+        width: 70%;
+    }
+
+    .contato-texto {
+        width: 70%;
+    }
+
+    .email-botao {
+        width: 30%;
+        padding: 1em;
+        margin: auto;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 1% 20%;
+    }
+
+    .contato-titulo {
+        width: 100%;
+    }
+
+    .email-botao {
+        width: 25%;
+    }
+}
